@@ -1,0 +1,42 @@
+{
+  "total_revenue": 13221498.11,
+  "total_orders": 99441,
+  "delivered_orders": 96478,
+  "avg_order_value": 137.04,
+  "late_delivery_rate_pct": 8.11,
+  "avg_review_score": 4.09,
+  "cancellation_rate_pct": 0.63,
+  "avg_delivery_days": 12.6,
+  "review_score_on_time": 4.29,
+  "review_score_late": 2.57,
+  "late_orders": 7826,
+  "worst_states_by_late_rate": [
+    {
+      "customer_state": "MA",
+      "late_rate": 19.67
+    },
+    {
+      "customer_state": "CE",
+      "late_rate": 15.32
+    },
+    {
+      "customer_state": "BA",
+      "late_rate": 14.04
+    }
+  ],
+  "top5_categories": [
+    "health_beauty",
+    "watches_gifts",
+    "bed_bath_table",
+    "sports_leisure",
+    "computers_accessories"
+  ],
+  "top5_revenue_share_pct": 39.8,
+  "unique_customers": 96096,
+  "repeat_customers": 2997,
+  "repeat_rate_pct": 3.1,
+  "retention_target_repeat_rate_pct": 3.43,
+  "extra_repeat_customers_at_target": 300,
+  "avg_revenue_per_customer": 141.62,
+  "top_20pct_sellers_revenue_share_pct": 82.3
+}

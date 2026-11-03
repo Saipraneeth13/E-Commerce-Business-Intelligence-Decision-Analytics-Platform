@@ -1,0 +1,5 @@
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+psycopg2-binary>=2.9   # optional: loader falls back to the psql client without it

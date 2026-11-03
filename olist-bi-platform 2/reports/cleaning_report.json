@@ -1,0 +1,147 @@
+{
+  "geolocation": {
+    "rows_before": 1000163,
+    "rows_after": 738332,
+    "duplicates_removed": 261831
+  },
+  "products": {
+    "rows": 32951,
+    "missing_category_fixed": 610,
+    "untranslated_categories_after": 0,
+    "numeric_values_imputed": {
+      "product_name_length": 610,
+      "product_description_length": 610,
+      "product_photos_qty": 610,
+      "product_weight_g": 2,
+      "product_length_cm": 2,
+      "product_height_cm": 2,
+      "product_width_cm": 2
+    }
+  },
+  "orders": {
+    "rows": 99441,
+    "delivered_without_delivery_date": 8,
+    "delivered_before_purchase": 0,
+    "status_counts": {
+      "delivered": 96478,
+      "shipped": 1107,
+      "canceled": 625,
+      "unavailable": 609,
+      "invoiced": 314,
+      "processing": 301,
+      "created": 5,
+      "approved": 2
+    }
+  },
+  "order_reviews": {
+    "rows_before": 99224,
+    "rows_after": 99224,
+    "review_ids_reused_across_orders": 814,
+    "orders_with_multiple_reviews": 551
+  },
+  "customers": {
+    "rows_before": 99441,
+    "rows_after": 99441,
+    "duplicates_removed": 0
+  },
+  "sellers": {
+    "rows_before": 3095,
+    "rows_after": 3095,
+    "duplicates_removed": 0
+  },
+  "order_items": {
+    "rows_before": 112650,
+    "rows_after": 112650,
+    "duplicates_removed": 0
+  },
+  "order_payments": {
+    "rows_before": 103886,
+    "rows_after": 103886,
+    "duplicates_removed": 0
+  },
+  "summary": {
+    "tables_cleaned": 9,
+    "total_duplicate_rows_removed": 261831,
+    "missing_categories_fixed": 610,
+    "validation_checks_passed": 19,
+    "validation_checks_total": 19
+  },
+  "validation": {
+    "pk_orders": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_customers": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_products": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_sellers": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_order_items": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_order_payments": {
+      "passed": true,
+      "detail": ""
+    },
+    "pk_order_reviews": {
+      "passed": true,
+      "detail": ""
+    },
+    "fk_orders.customer_id->customers": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "fk_order_items.order_id->orders": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "fk_order_items.product_id->products": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "fk_order_items.seller_id->sellers": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "fk_order_payments.order_id->orders": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "fk_order_reviews.order_id->orders": {
+      "passed": true,
+      "detail": "0 orphan rows"
+    },
+    "review_score_1_to_5": {
+      "passed": true,
+      "detail": ""
+    },
+    "price_positive": {
+      "passed": true,
+      "detail": ""
+    },
+    "freight_non_negative": {
+      "passed": true,
+      "detail": ""
+    },
+    "payment_value_non_negative": {
+      "passed": true,
+      "detail": ""
+    },
+    "orders_have_items": {
+      "passed": true,
+      "detail": "99.22% orders have items"
+    },
+    "no_null_product_category": {
+      "passed": true,
+      "detail": ""
+    }
+  }
+}

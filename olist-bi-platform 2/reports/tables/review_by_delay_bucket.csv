@@ -1,0 +1,7 @@
+delay_bucket,orders,avg_review
+7+ days early,71303,4.32
+0-7 days early,17341,4.2
+1-3 days late,2662,3.77
+4-7 days late,1819,2.32
+8-14 days late,1790,1.74
+15+ days late,1555,1.71
